@@ -5,7 +5,7 @@ pipeline {
          
         stage ("Voting App Image Build") {
             steps {
-                sh ("docker build $jenkins_vote -t voting-app ") 
+                sh ("docker build /var/lib/jenkins/workspace/vote -t voting-app ") 
             }
         }
         
